@@ -1,0 +1,89 @@
+.navbar{
+background-color: #CFB698 !important;
+
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,.navbar-toggler{
+  outline: none !important;
+  box-shadow: none;
+  border: 0px;
+
+}
+       .custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%2359482F' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.name h1{
+    color: #59482F;
+}
+
+.contact a{
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 30px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.product {
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+.product h3 {
+  margin: 10px 0 5px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.product p {
+  font-weight: bold;
+  color: #222;
+  font-size: 0.95rem;
+}
+
+.custom, .printables{
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+}
+.nav-item{
+  color: black !important;
+}
+
+@media (max-width: 786px) {
+  .product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 30px;
+  width: 90%;
+}
+}
+ .custom, .printables{
+  opacity: 0;
+  transform: translateY(50px); 
+  transition: all 0.8s ease-out;
+ 
+}
+
+.custom.visible, .printables.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+

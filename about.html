@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        body {
+            font-family: 'Libre Baskerville', serif;
+            font-weight: 400;
+        }
+
+        .libre-baskerville-regular {
+            font-family: "Libre Baskerville", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .libre-baskerville-bold {
+            font-family: "Libre Baskerville", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .libre-baskerville-regular-italic {
+            font-family: "Libre Baskerville", serif;
+            font-weight: 400;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar bg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="assets/logo.png" height="100px" width="auto"></a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end text-bg" tabindex="-1" id="offcanvasNavbar2"
+                aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand" href="#"><img src="assets/logo.png" height="75px" width="auto"></a>
+                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Wellmade_22</h5>
+                    <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item"> <a class="nav-link active" aria-current="page"
+                                href="./index.html">Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="./about.html">About</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="./project.html">Project</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--about us-->
+    <div class="container">
+    <div class=" col-xl-10 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+            <div class="col-lg-7 text-center text-lg-start">
+                <h1 class="display-4 fw-bold lh-1 mb-3" style="color: #59482F;">About us</h1>
+                <p class="col-lg-10 fs-4">Wellmade_22 was officially launched in 2022, but the idea was born much earlier, during the COVID-19 pandemic. The concept came to founder Bhavik Sharma when he was just in 10th grade. During that time of stillness, he recognized a need for creativity and quality in products, and from that observation, the idea for Wellmade_22 took shape.
+
+This isn't just a business; it's the result of years of planning and hard work. We bring that same initial passion and dedication to every project, offering top-notch graphic design, printing, and custom gifts to our clients.</p>
+            </div>
+            <div class="col-md-10 mx-auto col-lg-5">
+               <img src="./assets/about.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--footer-->
+    <div class="container">
+        <footer>
+            <p style="text-align: center;">Our contact: +91 8815920322 & bswellmade22@gmail.com</p>
+            <hr>
+            <p class="text-center text-body-secondary">© 2022 Wellmade_22</p>
+
+        </footer>
+    </div>
+    <!-- Bootstrap JS (moved to body end) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Local scripts -->
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
